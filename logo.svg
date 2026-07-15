@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-label="Open Pobres y Ausentes - clawbot abogado">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5EFE6"/>
+      <stop offset="1" stop-color="#EADFCF"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4855E"/>
+      <stop offset="1" stop-color="#D97757"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fondo -->
+  <rect width="480" height="480" rx="96" fill="url(#bg)"/>
+
+  <!-- toga / hombros del abogado -->
+  <path d="M120 452 Q240 360 360 452 Z" fill="#2E2A26"/>
+  <path d="M198 452 Q240 388 282 452 Z" fill="#F5EFE6"/>
+  <!-- moño / corbatín -->
+  <path d="M240 372 l-26 16 v-32 z" fill="#2E2A26"/>
+  <path d="M240 372 l26 16 v-32 z" fill="#2E2A26"/>
+  <circle cx="240" cy="372" r="7" fill="#2E2A26"/>
+
+  <!-- antena -->
+  <line x1="240" y1="70" x2="240" y2="104" stroke="#2E2A26" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="240" cy="62" r="12" fill="#D97757"/>
+
+  <!-- cabeza del clawbot -->
+  <rect x="128" y="104" width="224" height="196" rx="52" fill="url(#body)" stroke="#2E2A26" stroke-width="8"/>
+  <!-- orejas / auriculares -->
+  <rect x="108" y="168" width="26" height="72" rx="12" fill="#2E2A26"/>
+  <rect x="346" y="168" width="26" height="72" rx="12" fill="#2E2A26"/>
+
+  <!-- visor -->
+  <rect x="156" y="150" width="168" height="104" rx="36" fill="#2E2A26"/>
+  <!-- ojos amables -->
+  <circle cx="204" cy="202" r="20" fill="#F5EFE6"/>
+  <circle cx="276" cy="202" r="20" fill="#F5EFE6"/>
+  <circle cx="204" cy="202" r="9" fill="#2E2A26"/>
+  <circle cx="276" cy="202" r="9" fill="#2E2A26"/>
+  <!-- sonrisa -->
+  <path d="M212 234 Q240 250 268 234" fill="none" stroke="#F5EFE6" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- balanza de la justicia, sostenida al frente -->
+  <g stroke="#2E2A26" stroke-width="7" stroke-linecap="round" fill="none">
+    <line x1="240" y1="300" x2="240" y2="340"/>
+    <line x1="176" y1="316" x2="304" y2="316"/>
+    <line x1="176" y1="316" x2="160" y2="348"/>
+    <line x1="176" y1="316" x2="192" y2="348"/>
+    <line x1="304" y1="316" x2="288" y2="348"/>
+    <line x1="304" y1="316" x2="320" y2="348"/>
+  </g>
+  <path d="M156 348 a20 12 0 0 0 40 0 Z" fill="#D97757" stroke="#2E2A26" stroke-width="5"/>
+  <path d="M284 348 a20 12 0 0 0 40 0 Z" fill="#D97757" stroke="#2E2A26" stroke-width="5"/>
+  <circle cx="240" cy="300" r="8" fill="#2E2A26"/>
+</svg>

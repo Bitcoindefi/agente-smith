@@ -1,0 +1,34 @@
+# ============================================================
+#  Open Boga · .gitignore FAIL-SAFE (denegar por defecto)
+#  Regla: NADA se versiona salvo lo que se permita explícitamente.
+#  Objetivo: que ningún dato de caso privado llegue nunca al repo,
+#  aunque te olvides de configurarlo.
+# ============================================================
+
+# 1) Ignorar TODO en la raíz por defecto
+/*
+
+# 2) Permitir solo los archivos y carpetas del SISTEMA
+!/.gitignore
+!/README.md
+!/LICENSE
+!/CREDITOS.md
+!/CLAUDE.md
+!/logo.svg
+!/_PLANTILLA-CASO/
+!/jurisdicciones/
+!/componentes/
+!/skills/
+!/casos/
+
+# 3) Dentro de casos/: ignorar cada subcarpeta de caso (privado),
+#    permitir únicamente el README explicativo.
+/casos/*
+!/casos/README.md
+
+# 4) Basura del sistema operativo / editores
+.DS_Store
+Thumbs.db
+*.tmp
+*~
+.vscode/
