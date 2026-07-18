@@ -1,78 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Agente Smith">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Agente Smith — sala de interrogatorio">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#04140b"/>
-      <stop offset="1" stop-color="#020a06"/>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#adc6a5"/>
+      <stop offset="1" stop-color="#8fac89"/>
     </linearGradient>
-    <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#06170e"/>
-      <stop offset="0.5" stop-color="#1c7a41" stop-opacity="0.5"/>
-      <stop offset="1" stop-color="#04120b"/>
+    <linearGradient id="door" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c3d6ba"/>
+      <stop offset="1" stop-color="#a7bf9f"/>
     </linearGradient>
     <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#16382a"/>
-      <stop offset="1" stop-color="#0a2015"/>
+      <stop offset="0" stop-color="#1d5c46"/>
+      <stop offset="0.12" stop-color="#17503c"/>
+      <stop offset="1" stop-color="#0c3527"/>
     </linearGradient>
     <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#101815"/>
-      <stop offset="1" stop-color="#060b08"/>
+      <stop offset="0" stop-color="#15211a"/>
+      <stop offset="1" stop-color="#070f0a"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1c11"/>
+      <stop offset="0.5" stop-color="#1c5c34" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#06130c"/>
     </linearGradient>
     <linearGradient id="tie" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0d1f14"/>
-      <stop offset="1" stop-color="#041008"/>
+      <stop offset="0" stop-color="#101f16"/>
+      <stop offset="1" stop-color="#050d08"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
-      <stop offset="0" stop-color="#00ff41" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#00ff41" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="1.2"/>
+    <filter id="blursoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
     </filter>
   </defs>
 
-  <!-- fondo -->
-  <rect x="0" y="0" width="400" height="400" rx="48" fill="url(#bg)"/>
-  <rect x="1" y="1" width="398" height="398" rx="47" fill="none" stroke="#00ff41" stroke-opacity="0.18" stroke-width="2"/>
+  <!-- pared de la sala -->
+  <rect x="0" y="0" width="400" height="400" rx="48" fill="url(#wall)"/>
 
-  <!-- lluvia de código (capa profunda) -->
-  <g font-family="'Courier New',monospace" font-size="17" fill="#00ff41" filter="url(#soft)">
-    <text x="30" y="0" opacity="0.38"><tspan x="30" dy="26">ア</tspan><tspan x="30" dy="22">7</tspan><tspan x="30" dy="22">シ</tspan><tspan x="30" dy="22">0</tspan><tspan x="30" dy="22">メ</tspan><tspan x="30" dy="22">1</tspan><tspan x="30" dy="22">カ</tspan><tspan x="30" dy="22">9</tspan><tspan x="30" dy="22">ワ</tspan><tspan x="30" dy="22">3</tspan><tspan x="30" dy="22">ネ</tspan><tspan x="30" dy="22">Z</tspan><tspan x="30" dy="22">5</tspan><tspan x="30" dy="22">ソ</tspan><tspan x="30" dy="22">8</tspan><tspan x="30" dy="22">ヒ</tspan></text>
-    <text x="64" y="-14" opacity="0.24"><tspan x="64" dy="26">1</tspan><tspan x="64" dy="22">ラ</tspan><tspan x="64" dy="22">4</tspan><tspan x="64" dy="22">ト</tspan><tspan x="64" dy="22">N</tspan><tspan x="64" dy="22">ク</tspan><tspan x="64" dy="22">2</tspan><tspan x="64" dy="22">ハ</tspan><tspan x="64" dy="22">0</tspan><tspan x="64" dy="22">ミ</tspan><tspan x="64" dy="22">6</tspan><tspan x="64" dy="22">サ</tspan><tspan x="64" dy="22">X</tspan><tspan x="64" dy="22">ル</tspan><tspan x="64" dy="22">7</tspan><tspan x="64" dy="22">タ</tspan></text>
-    <text x="98" y="8" opacity="0.30"><tspan x="98" dy="26">ケ</tspan><tspan x="98" dy="22">0</tspan><tspan x="98" dy="22">ヨ</tspan><tspan x="98" dy="22">5</tspan><tspan x="98" dy="22">フ</tspan><tspan x="98" dy="22">R</tspan><tspan x="98" dy="22">3</tspan><tspan x="98" dy="22">ニ</tspan><tspan x="98" dy="22">8</tspan><tspan x="98" dy="22">セ</tspan><tspan x="98" dy="22">1</tspan><tspan x="98" dy="22">モ</tspan><tspan x="98" dy="22">4</tspan><tspan x="98" dy="22">ウ</tspan><tspan x="98" dy="22">9</tspan><tspan x="98" dy="22">コ</tspan></text>
-    <text x="286" y="4" opacity="0.30"><tspan x="286" dy="26">3</tspan><tspan x="286" dy="22">キ</tspan><tspan x="286" dy="22">V</tspan><tspan x="286" dy="22">ユ</tspan><tspan x="286" dy="22">0</tspan><tspan x="286" dy="22">ホ</tspan><tspan x="286" dy="22">7</tspan><tspan x="286" dy="22">ア</tspan><tspan x="286" dy="22">2</tspan><tspan x="286" dy="22">ナ</tspan><tspan x="286" dy="22">9</tspan><tspan x="286" dy="22">エ</tspan><tspan x="286" dy="22">1</tspan><tspan x="286" dy="22">ス</tspan><tspan x="286" dy="22">6</tspan><tspan x="286" dy="22">リ</tspan></text>
-    <text x="320" y="-10" opacity="0.24"><tspan x="320" dy="26">ノ</tspan><tspan x="320" dy="22">8</tspan><tspan x="320" dy="22">テ</tspan><tspan x="320" dy="22">1</tspan><tspan x="320" dy="22">M</tspan><tspan x="320" dy="22">レ</tspan><tspan x="320" dy="22">5</tspan><tspan x="320" dy="22">オ</tspan><tspan x="320" dy="22">0</tspan><tspan x="320" dy="22">チ</tspan><tspan x="320" dy="22">4</tspan><tspan x="320" dy="22">ム</tspan><tspan x="320" dy="22">7</tspan><tspan x="320" dy="22">イ</tspan><tspan x="320" dy="22">2</tspan><tspan x="320" dy="22">ヤ</tspan></text>
-    <text x="354" y="12" opacity="0.36"><tspan x="354" dy="26">0</tspan><tspan x="354" dy="22">マ</tspan><tspan x="354" dy="22">6</tspan><tspan x="354" dy="22">ヌ</tspan><tspan x="354" dy="22">K</tspan><tspan x="354" dy="22">ロ</tspan><tspan x="354" dy="22">1</tspan><tspan x="354" dy="22">ツ</tspan><tspan x="354" dy="22">9</tspan><tspan x="354" dy="22">ヘ</tspan><tspan x="354" dy="22">3</tspan><tspan x="354" dy="22">ヲ</tspan><tspan x="354" dy="22">5</tspan><tspan x="354" dy="22">カ</tspan><tspan x="354" dy="22">8</tspan><tspan x="354" dy="22">シ</tspan></text>
-    <text x="152" y="-6" opacity="0.12"><tspan x="152" dy="26">9</tspan><tspan x="152" dy="22">ミ</tspan><tspan x="152" dy="22">2</tspan><tspan x="152" dy="22">サ</tspan></text>
-    <text x="242" y="2" opacity="0.12"><tspan x="242" dy="26">ハ</tspan><tspan x="242" dy="22">4</tspan><tspan x="242" dy="22">ネ</tspan></text>
+  <!-- bloques de hormigón -->
+  <g stroke="#7d9c78" stroke-width="1.6" opacity="0.55">
+    <path d="M0 62 H400 M0 100 H400 M0 138 H400 M0 176 H400 M0 214 H400 M0 252 H400 M0 290 H400"/>
+    <path d="M56 62 V100 M148 62 V100 M240 62 V100 M332 62 V100"/>
+    <path d="M102 100 V138 M194 100 V138 M286 100 V138"/>
+    <path d="M56 138 V176 M148 138 V176 M240 138 V176"/>
+    <path d="M102 176 V214 M194 176 V214"/>
+    <path d="M56 214 V252 M148 214 V252"/>
+    <path d="M102 252 V290"/>
   </g>
 
-  <!-- halo -->
-  <ellipse cx="200" cy="190" rx="150" ry="150" fill="url(#glow)"/>
+  <!-- puerta con teclado -->
+  <g>
+    <rect x="298" y="30" width="78" height="284" rx="4" fill="url(#door)" stroke="#86a37e" stroke-width="3"/>
+    <rect x="306" y="40" width="62" height="264" rx="3" fill="none" stroke="#96b18d" stroke-width="1.6" opacity="0.8"/>
+    <rect x="306" y="176" width="6" height="26" rx="3" fill="#6b7f66"/>
+    <rect x="342" y="146" width="18" height="24" rx="2" fill="#93a68c" stroke="#7d9c78" stroke-width="1"/>
+    <g fill="#5f7259">
+      <circle cx="347" cy="152" r="1.4"/><circle cx="352" cy="152" r="1.4"/><circle cx="357" cy="152" r="1.4"/>
+      <circle cx="347" cy="158" r="1.4"/><circle cx="352" cy="158" r="1.4"/><circle cx="357" cy="158" r="1.4"/>
+      <circle cx="347" cy="164" r="1.4"/><circle cx="352" cy="164" r="1.4"/><circle cx="357" cy="164" r="1.4"/>
+    </g>
+  </g>
+
+  <!-- la Matrix se filtra en la pared -->
+  <g font-family="'Courier New',monospace" font-size="15" fill="#0f3d24" opacity="0.10">
+    <text x="22" y="40">ア 7 シ 0 メ</text>
+    <text x="60" y="86">1 ラ 4 ト N</text>
+    <text x="30" y="132">ケ 0 ヨ 5 フ</text>
+    <text x="70" y="178">3 キ V ユ 0</text>
+    <text x="26" y="224">ノ 8 テ 1 M</text>
+    <text x="64" y="270">0 マ 6 ヌ K</text>
+  </g>
+
+  <!-- sombra del cuerpo sobre la pared -->
+  <ellipse cx="212" cy="240" rx="110" ry="140" fill="#2c4630" opacity="0.25" filter="url(#blursoft)"/>
 
   <!-- ===== figura · capa de extrusión 2.5D ===== -->
-  <g transform="translate(9,9)" fill="#001708">
+  <g transform="translate(8,8)" fill="#3a5843" opacity="0.5">
     <path d="M200 112 c-30 0 -44 20 -44 50 c0 28 16 62 44 62 c28 0 44 -34 44 -62 c0 -30 -14 -50 -44 -50 Z"/>
     <path d="M92 400 c4 -74 40 -108 82 -122 l26 -8 l26 8 c42 14 78 48 82 122 Z"/>
   </g>
 
-  <!-- ===== figura · capa principal ===== -->
+  <!-- ===== figura ===== -->
   <g>
     <!-- cuello -->
     <path d="M182 208 h36 v34 h-36 Z" fill="#c9a077"/>
     <path d="M182 214 c10 8 26 8 36 0 v12 c-10 8 -26 8 -36 0 Z" fill="#a97e58" opacity="0.6"/>
 
     <!-- traje -->
-    <path d="M92 400 c4 -74 40 -108 82 -122 l26 24 l26 -24 c42 14 78 48 82 122 Z" fill="url(#suit)"/>
-    <path d="M92 400 c4 -74 40 -108 82 -122 l26 24 l26 -24 c42 14 78 48 82 122 Z" fill="none" stroke="#00ff41" stroke-opacity="0.22" stroke-width="2"/>
+    <path d="M92 400 c4 -74 40 -108 82 -122 l26 24 l26 -24 c42 14 78 48 82 122 Z" fill="#0b130d"/>
+    <path d="M92 400 c4 -74 40 -108 82 -122 l26 24 l26 -24 c42 14 78 48 82 122 Z" fill="none" stroke="#1e3527" stroke-width="2.5"/>
     <!-- solapas -->
-    <path d="M174 278 l26 24 l-18 30 l-22 -34 Z" fill="#0d1410"/>
-    <path d="M226 278 l-26 24 l18 30 l22 -34 Z" fill="#0d1410"/>
+    <path d="M174 278 l26 24 l-18 30 l-22 -34 Z" fill="#111c14"/>
+    <path d="M226 278 l-26 24 l18 30 l22 -34 Z" fill="#111c14"/>
     <!-- camisa -->
-    <path d="M186 292 h28 l-6 56 h-16 Z" fill="#e9efe9"/>
+    <path d="M186 292 h28 l-6 56 h-16 Z" fill="#eef2ec"/>
     <!-- corbata con pisacorbata -->
     <path d="M200 296 l9 12 l-6 44 l-3 6 l-3 -6 l-6 -44 Z" fill="url(#tie)"/>
-    <path d="M200 296 l9 12 l-9 4 l-9 -4 Z" fill="#123322"/>
-    <rect x="192" y="330" width="16" height="4" rx="2" fill="#9fb3a6" opacity="0.85"/>
+    <path d="M200 296 l9 12 l-9 4 l-9 -4 Z" fill="#16281c"/>
+    <rect x="192" y="328" width="16" height="4" rx="2" fill="#a9b8ac"/>
 
     <!-- cabeza -->
     <path d="M200 112 c-30 0 -44 20 -44 50 c0 28 16 62 44 62 c28 0 44 -34 44 -62 c0 -30 -14 -50 -44 -50 Z" fill="#d9b48f"/>
@@ -80,40 +102,53 @@
     <path d="M154 172 c-8 -2 -12 6 -8 14 c3 6 10 8 14 4 Z" fill="#c9a077"/>
     <path d="M246 172 c8 -2 12 6 8 14 c-3 6 -10 8 -14 4 Z" fill="#c9a077"/>
     <!-- pelo engominado, entradas y pico de viuda -->
-    <path d="M155 153 C152 123 173 105 200 105 C227 105 248 123 245 153 C240 138 233 130 224 128 C217 127 208 132 200 150 C192 132 183 127 176 128 C167 130 160 138 155 153 Z" fill="#1b1512"/>
-    <path d="M170 120 c9 -8 19 -11 30 -11 c11 0 21 3 30 11" fill="none" stroke="#3a2c22" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M155 153 C152 123 173 105 200 105 C227 105 248 123 245 153 C240 138 233 130 224 128 C217 127 208 132 200 150 C192 132 183 127 176 128 C167 130 160 138 155 153 Z" fill="#241a14"/>
+    <path d="M170 120 c9 -8 19 -11 30 -11 c11 0 21 3 30 11" fill="none" stroke="#453227" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
     <!-- anteojos angostos -->
     <g>
-      <rect x="165" y="166" width="31" height="19" rx="9" fill="#05080a"/>
-      <rect x="204" y="166" width="31" height="19" rx="9" fill="#05080a"/>
+      <rect x="165" y="166" width="31" height="19" rx="9" fill="#0a0d0a"/>
+      <rect x="204" y="166" width="31" height="19" rx="9" fill="#0a0d0a"/>
       <rect x="168" y="169" width="25" height="13" rx="6" fill="url(#lens)"/>
       <rect x="207" y="169" width="25" height="13" rx="6" fill="url(#lens)"/>
-      <rect x="195" y="172" width="10" height="4" rx="2" fill="#05080a"/>
-      <path d="M165 174 l-9 -3 M235 174 l9 -3" stroke="#05080a" stroke-width="4" stroke-linecap="round"/>
-      <path d="M172 170 h16" stroke="#b4ffce" stroke-width="2" opacity="0.25" stroke-linecap="round"/>
-      <path d="M211 170 h16" stroke="#b4ffce" stroke-width="2" opacity="0.25" stroke-linecap="round"/>
+      <rect x="195" y="172" width="10" height="4" rx="2" fill="#0a0d0a"/>
+      <path d="M165 174 l-9 -3 M235 174 l9 -3" stroke="#0a0d0a" stroke-width="4" stroke-linecap="round"/>
+      <path d="M172 170 h16" stroke="#dff0e2" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+      <path d="M211 170 h16" stroke="#dff0e2" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
     </g>
     <!-- nariz y gesto severo -->
     <path d="M199 192 c0 6 -1 9 -4 12 c3 3 7 3 10 0" fill="none" stroke="#b08a63" stroke-width="2.5" stroke-linecap="round"/>
     <path d="M189 215 c8 3 15 3 22 0" fill="none" stroke="#8a6947" stroke-width="3" stroke-linecap="round"/>
 
     <!-- auricular con cable -->
-    <circle cx="250" cy="180" r="5" fill="#0b0f0c" stroke="#00ff41" stroke-opacity="0.5" stroke-width="1.5"/>
-    <path d="M252 185 c10 22 2 44 -14 64 c-6 8 -8 16 -6 26" fill="none" stroke="#9fb3a6" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="250" cy="180" r="5" fill="#0b0f0c" stroke="#dff0e2" stroke-opacity="0.4" stroke-width="1.5"/>
+    <path d="M252 185 c10 22 2 44 -14 64 c-6 8 -8 16 -6 26" fill="none" stroke="#c9d8cc" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
   </g>
 
-  <!-- escritorio del interrogatorio -->
-  <path d="M0 342 H400 V352 A48 48 0 0 1 352 400 H48 A48 48 0 0 1 0 352 Z" fill="url(#desk)"/>
-  <path d="M8 343 H392" stroke="#b4ffce" stroke-opacity="0.22" stroke-width="2"/>
+  <!-- escritorio -->
+  <path d="M0 340 H400 V352 A48 48 0 0 1 352 400 H48 A48 48 0 0 1 0 352 Z" fill="url(#desk)"/>
+  <path d="M8 341 H392" stroke="#bfe3cf" stroke-opacity="0.35" stroke-width="2.5"/>
+  <!-- reflejo en el escritorio -->
+  <ellipse cx="200" cy="352" rx="120" ry="7" fill="#dff0e2" opacity="0.06"/>
+
+  <!-- manos sobre la mesa -->
+  <g>
+    <rect x="130" y="352" width="30" height="17" rx="6" fill="#0b130d" transform="rotate(6 145 360)"/>
+    <ellipse cx="166" cy="362" rx="15" ry="9" fill="#d9b48f"/>
+    <path d="M156 360 q4 5 10 5 M166 359 q4 5 9 5" stroke="#b08a63" stroke-width="1.6" fill="none" opacity="0.7"/>
+  </g>
+
   <!-- expediente sobre el escritorio -->
   <g transform="rotate(-4 285 364)">
-    <rect x="230" y="360" width="124" height="23" rx="5" fill="#04110a" opacity="0.85"/>
+    <rect x="230" y="360" width="124" height="23" rx="5" fill="#06231a" opacity="0.8"/>
     <rect x="224" y="348" width="122" height="26" rx="4" fill="#2e8f57"/>
     <rect x="224" y="348" width="122" height="9" rx="4" fill="#26744a"/>
     <rect x="330" y="348" width="16" height="26" rx="3" fill="#0b2416"/>
-    <circle cx="338" cy="355" r="2" fill="#9fb3a6"/>
-    <circle cx="338" cy="361" r="2" fill="#9fb3a6"/>
-    <circle cx="338" cy="367" r="2" fill="#9fb3a6"/>
-    <circle cx="283" cy="358" r="3" fill="#cfe9d8" opacity="0.9"/>
+    <circle cx="338" cy="355" r="2" fill="#a9b8ac"/>
+    <circle cx="338" cy="361" r="2" fill="#a9b8ac"/>
+    <circle cx="338" cy="367" r="2" fill="#a9b8ac"/>
+    <circle cx="283" cy="358" r="3" fill="#dff0e2" opacity="0.9"/>
   </g>
+
+  <!-- marco -->
+  <rect x="1" y="1" width="398" height="398" rx="47" fill="none" stroke="#5d7a58" stroke-opacity="0.6" stroke-width="2"/>
 </svg>
