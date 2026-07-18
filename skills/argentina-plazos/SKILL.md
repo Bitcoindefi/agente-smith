@@ -6,7 +6,7 @@ license: MIT
 
 # Cómputo de plazos · Derecho argentino
 
-Skill original de Open Boga (MIT). Método: **nunca computar sin identificar primero
+Skill original de Agente Smith (MIT). Método: **nunca computar sin identificar primero
 jurisdicción, tipo de plazo y norma fuente — y verificar la norma en SAIJ antes de
 afirmar el resultado.**
 

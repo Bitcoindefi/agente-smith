@@ -1,5 +1,5 @@
 # ============================================================
-#  Open Boga · .gitignore FAIL-SAFE (denegar por defecto)
+#  Agente Smith · .gitignore FAIL-SAFE (denegar por defecto)
 #  Regla: NADA se versiona salvo lo que se permita explícitamente.
 #  Objetivo: que ningún dato de caso privado llegue nunca al repo,
 #  aunque te olvides de configurarlo.

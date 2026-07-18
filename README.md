@@ -1,21 +1,24 @@
 <p align="center">
-  <img src="logo.svg" width="160" alt="Open Boga">
+  <img src="logo.svg" width="160" alt="Agente Smith">
 </p>
 
-<h1 align="center">Open Boga</h1>
+<h1 align="center">Agente Smith</h1>
 
 <p align="center">
-  <b>Asistente de práctica jurídica argentina para Claude Code.</b><br>
+  <b>Agente de práctica jurídica argentina para Claude Code.</b><br>
   Pensado para la Defensoría de Pobres y Ausentes · CABA/Nacional · Jujuy · Salta
 </p>
 
 ---
 
-> ⚖️ **Qué es.** Un workspace para Claude Code con skills de práctica jurídica argentina
-> (ruteo por área, plazos, diagnóstico y fundamentación de escritos) y un conector en
-> vivo a **SAIJ** (jurisprudencia, legislación y doctrina — 899K+ documentos), organizado
-> por casos. No reemplaza el juicio profesional del abogado ni constituye asesoramiento
-> legal: asiste el análisis y deja marcada toda cita sin verificar.
+> ⚖️ **Qué es.** Un **agente** para Claude Code que asiste la práctica jurídica
+> argentina: rutea por área del derecho, computa plazos por jurisdicción, diagnostica
+> y fundamenta escritos, e investiga en vivo sobre **SAIJ** (jurisprudencia,
+> legislación y doctrina — 899K+ documentos), organizado por casos. Como su tocayo,
+> es implacable y se multiplica en subagentes cuando el caso lo exige — pero trabaja
+> del lado de los que defienden. No reemplaza el juicio profesional del abogado ni
+> constituye asesoramiento legal: asiste el análisis y deja marcada toda cita sin
+> verificar.
 
 ## Componentes
 
@@ -37,17 +40,17 @@ aunque te olvides de configurarla. El repo solo versiona el **sistema**, no los 
 
 **Oneliner (Windows PowerShell):**
 ```powershell
-irm https://raw.githubusercontent.com/Bitcoindefi/open-boga/main/componentes/instalar.ps1 | iex
+irm https://raw.githubusercontent.com/Bitcoindefi/agente-smith/main/componentes/instalar.ps1 | iex
 ```
 
 **Oneliner (macOS / Linux):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Bitcoindefi/open-boga/main/componentes/instalar.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Bitcoindefi/agente-smith/main/componentes/instalar.sh | bash
 ```
 
 **Solo la skill de SAIJ (vía skills.sh):**
 ```bash
-npx skills add Bitcoindefi/open-boga
+npx skills add Bitcoindefi/agente-smith
 ```
 
 El instalador:
@@ -60,7 +63,7 @@ Sistema 100% autocontenido: no descarga contenido de terceros.
 
 1. Abrí Claude Code en esta carpeta.
 2. Para un caso nuevo: copiá `_PLANTILLA-CASO/` dentro de `casos/` con el nombre del expediente.
-3. Pedí, por ejemplo: *"Abrí el caso Pérez, fuero penal Salta"* → el sistema carga el perfil de área, pregunta/fija el fuero y computa plazos.
+3. Pedí, por ejemplo: *"Abrí el caso Pérez, fuero penal Salta"* → el agente carga el perfil de área, pregunta/fija el fuero y computa plazos.
 4. Para investigar: *"Buscá en SAIJ jurisprudencia sobre prisión preventiva"* → usa el MCP.
 
 ## Jurisdicciones

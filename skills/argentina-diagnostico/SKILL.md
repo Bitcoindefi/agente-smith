@@ -6,7 +6,7 @@ license: MIT
 
 # Diagnóstico previo de escritos · Derecho argentino
 
-Skill original de Open Boga (MIT). Opera sobre un escrito **ya redactado** que el
+Skill original de Agente Smith (MIT). Opera sobre un escrito **ya redactado** que el
 abogado aporta. Objetivo: detectar defectos que causen rechazo, nulidad o riesgo,
 ANTES de presentar. No reescribe el escrito (eso es `argentina-bucles`); lo audita.
 

@@ -1,4 +1,4 @@
-# Open Boga · Workspace de la Defensoría de Pobres y Ausentes
+# Agente Smith · Agente de la Defensoría de Pobres y Ausentes
 
 Este archivo configura Claude Code para trabajar en esta carpeta. Se carga
 automáticamente al abrir el proyecto.

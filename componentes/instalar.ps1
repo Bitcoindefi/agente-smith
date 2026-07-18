@@ -1,9 +1,9 @@
 # ==========================================================================
-#  Open Boga · Instalador (Windows PowerShell)
+#  Agente Smith · Instalador (Windows PowerShell)
 #  Sistema 100% autocontenido (MIT). No descarga contenido de terceros.
 #  Uso:
 #    Desde el clon:   ./componentes/instalar.ps1
-#    Oneliner:        irm https://raw.githubusercontent.com/Bitcoindefi/open-boga/main/componentes/instalar.ps1 | iex
+#    Oneliner:        irm https://raw.githubusercontent.com/Bitcoindefi/agente-smith/main/componentes/instalar.ps1 | iex
 # ==========================================================================
 $ErrorActionPreference = "Stop"
 function Info($m){ Write-Host "==> $m" -ForegroundColor Cyan }
@@ -19,17 +19,17 @@ $skillsDir = Join-Path $HOME ".claude\skills"
 $mcpDir    = Join-Path $HOME ".claude\mcp-servers\saij"
 New-Item -ItemType Directory -Force -Path $skillsDir, $mcpDir | Out-Null
 
-# --- Ubicar el repo Open Boga (clon local, o clonar si es oneliner) ---
+# --- Ubicar el repo Agente Smith (clon local, o clonar si es oneliner) ---
 if ($PSScriptRoot -and (Test-Path (Join-Path $PSScriptRoot "mcp-saij\server.mjs"))) {
   $repo = Split-Path $PSScriptRoot -Parent
 } else {
-  $repo = Join-Path $HOME "open-boga"
+  $repo = Join-Path $HOME "agente-smith"
   if (-not (Test-Path $repo)) {
-    Info "Clonando open-boga en $repo"
-    git clone --depth 1 https://github.com/Bitcoindefi/open-boga.git $repo | Out-Null
+    Info "Clonando agente-smith en $repo"
+    git clone --depth 1 https://github.com/Bitcoindefi/agente-smith.git $repo | Out-Null
   }
 }
-Ok "Repo Open Boga: $repo"
+Ok "Repo Agente Smith: $repo"
 
 # --- 1) Skills (todas propias, desde el repo) ---
 foreach ($s in @("abogacia-argentina","argentina-plazos","argentina-diagnostico","argentina-bucles","saij-argentina")) {
@@ -48,4 +48,4 @@ claude mcp add saij --scope user -- node --use-system-ca $serverPath
 Ok "MCP 'saij' registrado"
 
 Write-Host ""
-Ok "Open Boga instalado. Reinicia Claude Code y verifica con /mcp."
+Ok "Agente Smith instalado. Reinicia Claude Code y verifica con /mcp."

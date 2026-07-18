@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # ==========================================================================
-#  Open Boga · Instalador (macOS / Linux)
+#  Agente Smith · Instalador (macOS / Linux)
 #  Sistema 100% autocontenido (MIT). No descarga contenido de terceros.
 #  Uso:
 #    Desde el clon:  bash componentes/instalar.sh
-#    Oneliner:       curl -fsSL https://raw.githubusercontent.com/Bitcoindefi/open-boga/main/componentes/instalar.sh | bash
+#    Oneliner:       curl -fsSL https://raw.githubusercontent.com/Bitcoindefi/agente-smith/main/componentes/instalar.sh | bash
 # ==========================================================================
 set -euo pipefail
 info(){ printf '\033[36m==> %s\033[0m\n' "$1"; }
@@ -23,10 +23,10 @@ SELF="${BASH_SOURCE[0]:-}"
 if [ -n "$SELF" ] && [ -f "$(dirname "$SELF")/mcp-saij/server.mjs" ]; then
   REPO="$(cd "$(dirname "$SELF")/.." && pwd)"
 else
-  REPO="$HOME/open-boga"
-  [ -d "$REPO" ] || { info "Clonando open-boga en $REPO"; git clone --depth 1 https://github.com/Bitcoindefi/open-boga.git "$REPO"; }
+  REPO="$HOME/agente-smith"
+  [ -d "$REPO" ] || { info "Clonando agente-smith en $REPO"; git clone --depth 1 https://github.com/Bitcoindefi/agente-smith.git "$REPO"; }
 fi
-ok "Repo Open Boga: $REPO"
+ok "Repo Agente Smith: $REPO"
 
 # 1) Skills (todas propias, desde el repo)
 for s in abogacia-argentina argentina-plazos argentina-diagnostico argentina-bucles saij-argentina; do
@@ -42,4 +42,4 @@ claude mcp add saij --scope user -- node --use-system-ca "$MCPDIR/server.mjs"
 ok "MCP 'saij' registrado"
 
 echo
-ok "Open Boga instalado. Reiniciá Claude Code y verificá con /mcp."
+ok "Agente Smith instalado. Reiniciá Claude Code y verificá con /mcp."

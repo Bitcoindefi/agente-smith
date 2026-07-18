@@ -4,9 +4,9 @@ description: "Punto de entrada para práctica jurídica argentina: fija las regl
 license: MIT
 ---
 
-# Abogacía Argentina · Router del sistema Open Boga
+# Abogacía Argentina · Router del sistema Agente Smith
 
-Skill original de Open Boga (MIT). El sistema asiste el análisis jurídico; **no
+Skill original de Agente Smith (MIT). El sistema asiste el análisis jurídico; **no
 reemplaza el juicio ni la firma del abogado** y no constituye asesoramiento legal.
 
 ## Reglas de operación (siempre, no negociables)

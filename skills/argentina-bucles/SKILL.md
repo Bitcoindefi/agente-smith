@@ -6,7 +6,7 @@ license: MIT
 
 # Bucle de fundamentación · Redacción de escritos desde cero
 
-Skill original de Open Boga (MIT). Método iterativo en 7 pasos: no se redacta nada
+Skill original de Agente Smith (MIT). Método iterativo en 7 pasos: no se redacta nada
 hasta tener el esqueleto argumental montado sobre fuentes verificadas.
 
 ## Paso 1 · Encuadre
