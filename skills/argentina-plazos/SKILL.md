@@ -30,32 +30,28 @@ afirmar el resultado.**
    cuestionada, dejarlo asentado — el cómputo es condicional.
 4. **Verificar la norma en SAIJ** (`saij_buscar_legislacion` + `saij_documento`) antes
    de afirmar cantidad de días o carácter del plazo. Citar artículo y texto.
-5. **Computar con calendario real**: feriados nacionales + feriados/asuetos locales de
-   la jurisdicción (verificar — los provinciales NO son los nacionales).
-6. **Aplicar ferias y suspensiones** que correspondan:
+5. **Cargar el calendario de ferias y asuetos del año.** Antes de computar,
+   identificar el año del cómputo y buscar su calendario en `plazos/ferias-<año>/`:
+   - Si el calendario **existe** para la jurisdicción → usarlo como referencia y
+     verificar las fechas contra las acordadas del tribunal (pueden haber cambiado).
+   - Si el calendario **no existe** para el año y jurisdicción → marcar el cómputo
+     entero con **🔲** y advertir: *"Calendario de ferias y asuetos para <año> no
+     cargado — verificar la acordada de feria vigente del tribunal superior de la
+     jurisdicción."*
+6. **Computar con calendario real**: feriados nacionales + feriados/asuetos locales de
+   la jurisdicción (verificar — los provinciales NO son los nacionales). Si el
+   calendario cargado tiene fechas marcadas 🔲, reflejar esa misma incertidumbre
+   en el resultado del cómputo.
+7. **Aplicar ferias y suspensiones** que correspondan:
    - Ferias judiciales (en el orden nacional, enero y feria de invierno según acordadas
      de la CSJN; cada provincia fija las suyas por acordada de su superior tribunal —
      verificar SIEMPRE la acordada local del año en curso).
    - Suspensiones por mediación prejudicial obligatoria u otras instancias previas
      según la jurisdicción y materia (verificar norma local).
-7. **Plazo de gracia.** En el orden nacional, presentación en las dos primeras horas
+8. **Plazo de gracia.** En el orden nacional, presentación en las dos primeras horas
    del día hábil siguiente al vencimiento (CPCCN art. 124). Las provincias tienen sus
    propias reglas (algunas dan más horas, otras difieren) — **verificar el código
    procesal local antes de contar con la gracia**.
-8. **Salida.** Entregar tabla: acto · tipo de plazo · norma fuente (verificada, con
-   uuid SAIJ) · inicio · vencimiento · gracia aplicable · riesgo.
-
-## Reglas duras
-
-- 🔴 **Plazo fatal**: marcarlo siempre y recomendar margen de seguridad (no presentar
-  el último día si es evitable).
-- **Prescripción ≠ caducidad**: la prescripción se suspende/interrumpe (CCCN arts.
-  2539–2549); la caducidad en general no. Identificar cuál es antes de computar.
-- Ejes de referencia de prescripción para orientar la búsqueda (SIEMPRE verificar el
-  texto vigente en SAIJ): CCCN arts. 2560 (genérico 5 años), 2561 (especiales, daños),
-  2562/2564 (2 años / 1 año, supuestos), LCT art. 256 (créditos laborales 2 años),
-  materia tributaria y de faltas: regímenes propios por jurisdicción.
-- **Nunca** afirmar un vencimiento sobre norma no verificada: marcar 🔲 verificación
-  pendiente y decir qué falta confirmar (norma, feriado local, acordada de feria).
-- Si dos cómputos son defendibles (p. ej. discusión sobre validez de la notificación),
-  informar ambos escenarios: el propio y el peor escenario.
+9. **Salida.** Entregar tabla: acto · tipo de plazo · norma fuente (verificada, con
+   uuid SAIJ) · inicio · vencimiento · gracia aplicable · calendario usado (año /
+   jurisdicción / fuente) · riesgo.

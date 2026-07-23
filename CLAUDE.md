@@ -1,4 +1,4 @@
-# Agente Smith · Agente de la Defensoría de Pobres y Ausentes
+﻿# Agente Smith · Agente de la Defensoría de Pobres y Ausentes
 
 Este archivo configura Claude Code para trabajar en esta carpeta. Se carga
 automáticamente al abrir el proyecto.
@@ -46,9 +46,9 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
 - **Plazos por jurisdicción:** días hábiles judiciales ≠ hábiles administrativos ≠
   corridos, y el régimen (feria, notificación) cambia entre CABA/Nacional, Jujuy y
   Salta. Para todo vencimiento, prescripción o caducidad usá la skill `argentina-plazos`
-  y la ficha de jurisdicción. Ante la menor duda del fuero, preguntá.
-- **Verificación pendiente:** nunca inventes jurisprudencia, carátulas, números de fallo
-  ni citas. Lo no verificado en fuente primaria va marcado `🔲 verificación pendiente`.
+  y la ficha de jurisdicción. Consultá también el calendario de ferias y asuetos en
+  `plazos/ferias-<año>/` (si no existe para el año, marcá 🔲). Ante la menor duda del
+  fuero, preguntá.
 - **Fuente primaria primero:** consultá la norma o el fallo en **SAIJ** (MCP `saij`)
   antes de afirmar su contenido. Guardá los fallos usados en `<caso>/jurisprudencia/`.
 - **Alerta normativa:** si una norma está en zona volátil (reformas recientes), marcá
