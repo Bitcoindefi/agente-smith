@@ -1,6 +1,6 @@
 ---
 name: abogacia-argentina
-description: "Punto de entrada para práctica jurídica argentina: fija las reglas de operación (jurisdicción primero, fuente primaria SAIJ, marcadores de verificación pendiente, alerta normativa, cómputo diferenciado de plazos) y rutea por área del derecho (laboral, civil, penal, familia, consumidor, societario, administrativo, previsional, tributario, tránsito, protección de datos) hacia sus ejes normativos y las sub-skills plazos/diagnóstico/bucles. Usar en cualquier consulta o trabajo de abogacía bajo derecho argentino."
+description: "Punto de entrada para práctica jurídica argentina: fija las reglas de operación (jurisdicción primero, fuente primaria SAIJ, marcadores de verificación pendiente, alerta normativa, cómputo diferenciado de plazos) y rutea por área del derecho (laboral, civil, penal, familia, consumidor, societario, administrativo, previsional, tributario, tránsito, faltas municipales, protección de datos) hacia sus ejes normativos y las sub-skills plazos/diagnóstico/bucles. Usar en cualquier consulta o trabajo de abogacía bajo derecho argentino."
 license: MIT
 ---
 
@@ -50,6 +50,22 @@ son citas listas para usar):
 | Tránsito | Ley 24.449 · Ley 26.363 (ANSV) · adhesiones y códigos de faltas locales ⚠️ |
 | Protección de datos | Ley 25.326 · normativa AAIP ⚠️ reforma en discusión |
 | Penal | CP · CPPF (federal, implementación progresiva ⚠️) · CPP de cada provincia |
+
+## Sub-perfil: Faltas Municipales / Contravencional
+
+La mecánica de faltas municipales (ej. multas de estacionamiento o tránsito local) difiere del área "tránsito" nacional. Las ordenanzas locales **casi nunca están en SAIJ**, por lo que deben verificarse en fuentes oficiales del municipio.
+
+- **Procedimiento típico**: Acta → Notificación → Pago voluntario reducido → Juzgamiento (Descargo).
+- **Advertencia normativa ⚠️**: Verificar siempre el Código de Faltas y las ordenanzas locales aplicables en portales municipales.
+- **Prescripción**: Cotejar el plazo local de prescripción vs. el art. 89 de la Ley Nacional de Tránsito 24.449 (evaluando el texto original vs. la reforma de la Ley 26.363 y el grado de adhesión local).
+- **Pago voluntario**: Evaluar conveniencia y procedencia.
+
+### Checklist de defensa frecuente:
+- [ ] **Falta de notificación** (afecta el debido proceso y derecho de defensa).
+- [ ] **Atipicidad de zona o conducta** (ej. zona no señalizada, excepción de carga y descarga).
+- [ ] **Nulidad del acta** (art. 70 LNT o incumplimiento de requisitos formales del código local).
+- [ ] **Prescripción** (tiempo transcurrido desde la infracción o última actuación).
+- [ ] **Procedencia de pago voluntario**.
 
 ## Sub-skills
 
