@@ -15,6 +15,7 @@
   <img src="https://img.shields.io/badge/SAIJ-899K%2B_docs_en_vivo-00b34a?style=flat-square" alt="SAIJ">
   <img src="https://img.shields.io/badge/jurisdicciones-CABA%2FNacional_·_Jujuy_·_Salta-0b3d2e?style=flat-square" alt="Jurisdicciones">
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-bienvenidos-00b34a?style=flat-square" alt="PRs bienvenidos"></a>
+  <a href=".github/workflows/saij-smoke.yml"><img src="https://github.com/Kenisank/agente-smith/actions/workflows/saij-smoke.yml/badge.svg" alt="SAIJ Smoke Tests"></a>
 </p>
 
 ---
