@@ -43,10 +43,20 @@ juramento/temeridad).
 **F. Prueba.** ¿Toda la prueba ofrecida y bien individualizada? ¿Pertinente y
 conducente? ¿Obtención lícita? ¿Falta prueba clave para algún hecho esencial?
 
-**G. Derecho.** La sección más auditada: **verificar cada norma y cada fallo citado
-contra SAIJ** (`saij_buscar_legislacion` / `saij_buscar_jurisprudencia` /
-`saij_documento`). ¿La norma dice lo que el escrito le atribuye? ¿Está vigente?
-¿El fallo existe y sostiene lo que se le atribuye? Toda cita no verificable: 🔴.
+**G. Derecho (auditoría sistemática de citas).** La sección más auditada. Usar skill
+`argentina-auditoria-citas` (auditoría obligatoria):
+
+1. Si existe tabla de fuentes en `jurisprudencia/fuentes-*.md`: correr auditoría contra esa tabla.
+2. Si NO existe tabla: crear una provisional conforme se verifiquen citas en SAIJ
+   (`saij_buscar_legislacion` / `saij_buscar_jurisprudencia` / `saij_documento`).
+3. Resultado de auditoría:
+   - 🟢 (firme): todas las citas son ✅ (verificadas en tabla) o 🔲 (pendientes deliberadas).
+   - 🟡 (mejorable): hay citas verificadas pero tabla incompleta u hay dudas de vigencia.
+   - 🔴 (defecto): hay citas 🔴 bloqueantes sin resolver (no en tabla, sin marca 🔲).
+4. Entregar tabla de fuentes completa + reporte de auditoría (generado por argentina-auditoria-citas).
+
+Verificar: ¿La norma dice lo que el escrito le atribuye? ¿Está vigente? ¿El fallo
+existe y sostiene lo que se le atribuye? Toda cita bloqueante 🔴: rechazo potencial.
 
 **H. Petitorio y congruencia.** ¿Pide todo lo que el desarrollo sostiene (y nada que
 no sostenga)? ¿Montos, intereses, costas? ¿Reservas necesarias (caso federal, vías
@@ -71,5 +81,7 @@ voluntario, consentimiento de actos que se querían impugnar).
 ## Reglas duras
 
 - No "aprobar en general": cada sección se pronuncia.
-- Ninguna cita se da por buena sin verificación en fuente primaria (o queda 🔲).
+- **Auditoría de citas obligatoria:** toda sección G se pronuncia usando `argentina-auditoria-citas`.
+  No hay 🟢 sin verificación completa; no hay cierre sin reporte de auditoría.
+- Ninguna cita se da por buena sin verificación en fuente primaria (SAIJ) o marca 🔲.
 - El diagnóstico no reemplaza el juicio del profesional firmante.

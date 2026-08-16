@@ -58,17 +58,28 @@ Releer el borrador dos veces con sombreros distintos:
   ¿dónde hay ruido que tapa el punto fuerte? → simplificar.
 Repetir el bucle hasta que una pasada no produzca cambios sustanciales (máx. 3).
 
-## Paso 6 · Verificación final de citas
+## Paso 6 · Verificación final de citas (auditoría sistemática)
 
-Pasar el escrito por la tabla de fuentes del Paso 2: toda cita del texto final debe
-estar en la tabla y verificada. Cita sin fuente verificada: se elimina o se marca
-expresamente como pendiente para decisión del abogado.
+**Usar skill `argentina-auditoria-citas` (auditoría obligatoria).**
+
+1. Crear tabla de fuentes verificadas: archivo `jurisprudencia/fuentes-[identificador].md`
+   con todas las normas/fallos investigados en Paso 2 (formato en skill argentina-auditoria-citas).
+2. **Correr auditoría:** skill `argentina-auditoria-citas` sobre el escrito borrador.
+3. Resolver TODO lo que sea 🔴 (bloqueante):
+   - Opción A: incorporar la norma/fallo a la tabla (buscar en SAIJ si falta).
+   - Opción B: eliminar la cita y reformular el párrafo sin ella.
+   - Opción C: marcar deliberadamente con 🔲 si es genérica (decisión del abogado).
+4. Confirmar TODO lo que sea 🔲 (pendiente): es decisión irreversible que va en el cierre.
+5. Entregar:
+   - Escrito final (100% citas verificadas ✅ o deliberadamente 🔲).
+   - Tabla de fuentes (jurisprudencia/fuentes-*.md).
+   - Reporte de auditoría (generado por argentina-auditoria-citas).
 
 ## Paso 7 · Cierre
 
 Correr `argentina-diagnostico` sobre el resultado (auditoría de las 9 secciones) y
-entregar: escrito + tabla de fuentes + lista de decisiones estratégicas que quedan en
-cabeza del abogado firmante.
+entregar: escrito + tabla de fuentes + reporte de auditoría de citas + lista de 
+decisiones estratégicas que quedan en cabeza del abogado firmante.
 
 ## Reglas duras
 
