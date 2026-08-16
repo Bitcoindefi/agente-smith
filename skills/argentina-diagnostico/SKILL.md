@@ -47,6 +47,10 @@ conducente? ¿Obtención lícita? ¿Falta prueba clave para algún hecho esencia
 contra SAIJ** (`saij_buscar_legislacion` / `saij_buscar_jurisprudencia` /
 `saij_documento`). ¿La norma dice lo que el escrito le atribuye? ¿Está vigente?
 ¿El fallo existe y sostiene lo que se le atribuye? Toda cita no verificable: 🔴.
+Las ordenanzas municipales no están en SAIJ: verificar contra el boletín/digesto/portal
+del municipio (ver `jurisdicciones/`); si el texto oficial no se obtiene, marcarla 🔲 y
+pedirla como prueba/informe/documento — el escrito no puede dar por vigente una
+ordenanza sin texto verificado.
 
 **H. Petitorio y congruencia.** ¿Pide todo lo que el desarrollo sostiene (y nada que
 no sostenga)? ¿Montos, intereses, costas? ¿Reservas necesarias (caso federal, vías
