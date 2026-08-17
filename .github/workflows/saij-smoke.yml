@@ -1,0 +1,56 @@
+# Smoke tests semanales para el MCP SAIJ
+# -----------------------------------------
+# Ejecuta los tests de humo contra la API pública de SAIJ
+# (buscar jurisprudencia, legislación, doctrina y documento por uuid).
+#
+# Tolerante a indisponibilidad: si SAIJ no responde (5xx, 403, timeout,
+# error de red), los tests se saltan con warning — no fallan el CI.
+#
+# También detecta cambios rompientes en el contrato de salida de la API
+# (cambio de estructura de searchResults, documentResultList, campos
+# requeridos ausentes, etc.).
+#
+# Se ejecuta:
+#   - Cada lunes a las 12:00 UTC (semanal)
+#   - En cada push a main
+
+name: SAIJ Smoke Tests
+
+on:
+  schedule:
+    # Todos los lunes 12:00 UTC
+    - cron: "0 12 * * 1"
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: # permitir ejecución manual
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Run SAIJ smoke tests
+        id: smoke
+        run: node test/saij-smoke-test.mjs
+        continue-on-error: false
+
+      - name: Log API health status
+        if: always()
+        run: |
+          if [ "${{ steps.smoke.outcome }}" = "success" ]; then
+            echo "✅ Smoke tests completed successfully"
+          else
+            echo "❌ Smoke tests failed — check logs above for details"
+          fi
