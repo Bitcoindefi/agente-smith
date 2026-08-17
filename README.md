@@ -19,6 +19,41 @@
 
 ---
 
+## Demo — Workflow completo
+
+El siguiente ejemplo muestra un flujo completo con un caso **100% ficticio**:
+se abre un caso, se confirma la jurisdicción, se busca jurisprudencia en SAIJ
+y se computa el plazo aplicable.
+
+### Paso 1 — Abrir un caso nuevo
+
+<p align="center">
+  <img src="demo/step1-open-case.svg" alt="Abrir un caso nuevo" width="720">
+</p>
+
+### Paso 2 — Confirmar jurisdicción
+
+<p align="center">
+  <img src="demo/step2-jurisdiction.svg" alt="Confirmar jurisdicción" width="720">
+</p>
+
+### Paso 3 — Buscar en SAIJ
+
+<p align="center">
+  <img src="demo/step3-saij-search.svg" alt="Búsqueda en SAIJ" width="720">
+</p>
+
+### Paso 4 — Computar el plazo
+
+<p align="center">
+  <img src="demo/step4-deadline.svg" alt="Cómputo de plazo" width="720">
+</p>
+
+> ⚠️ **Nota:** todos los datos del ejemplo son ficticios. Los nombres, carátulas
+> y cifras no corresponden a ningún caso real.
+
+---
+
 > ⚖️ **Qué es.** Un **agente abogado generalista**: rutea cada consulta por área del
 > derecho argentino, computa plazos según la jurisdicción, diagnostica escritos antes
 > de presentarlos, fundamenta nuevos desde cero e investiga en vivo sobre **SAIJ**
@@ -96,6 +131,56 @@ plazos y fuentes de cada jurisdicción. SAIJ tiene cobertura de legislación y j
 Las contribuciones son bienvenidas: fichas de nuevas provincias, mejoras a las
 skills, cobertura de más áreas. Reglas de la casa en [CONTRIBUTING.md](CONTRIBUTING.md)
 — la primera: **jamás datos de casos reales en el repo**.
+
+---
+
+## Quickstart (English)
+
+### Prerequisites
+
+- [Claude Code](https://claude.ai/code) installed and running in your terminal.
+- macOS, Linux, or Windows (PowerShell).
+
+### Install
+
+**macOS / Linux:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/Bitcoindefi/agente-smith/main/componentes/instalar.sh | bash
+```
+
+**Windows (PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/Bitcoindefi/agente-smith/main/componentes/instalar.ps1 | iex
+```
+
+**SAIJ skill only (via npx):**
+```bash
+npx skills add Bitcoindefi/agente-smith
+```
+
+The installer sets up all six skills in `~/.claude/skills/` and registers the SAIJ
+MCP server. No third-party content is downloaded.
+
+### Run
+
+```bash
+cd /path/to/agente-smith
+claude
+```
+
+### Basic usage
+
+1. **Open a new case:** *"Open the case Pérez, jurisdiction CABA, criminal division"* —
+   the agent loads the area profile, confirms the jurisdiction, and computes deadlines.
+2. **Ask a legal question:** *"Unjust dismissal with 8 years of seniority"* — the router
+   identifies the area and works with primary sources (SAIJ).
+3. **Research in SAIJ:** *"Search SAIJ for case law on preventive detention"* — the
+   MCP server queries 899K+ live documents.
+
+All case data stays in your local `casos/` directory and is never pushed to the
+repository.
+
+---
 
 ## Cómo citar
 
