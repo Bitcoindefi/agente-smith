@@ -22,6 +22,8 @@
 !/jurisdicciones/
 !/componentes/
 !/skills/
+!/plazos/
+
 !/casos/
 
 # 3) Dentro de casos/: ignorar cada subcarpeta de caso (privado),
