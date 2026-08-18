@@ -32,6 +32,9 @@ Para cada eje del argumento:
    buscan a propósito). Leer con `saij_documento` antes de citar.
 3. Registrar cada fuente: norma/fallo · cita textual breve · uuid · URL.
 4. Lo no verificable queda 🔲 y NO entra al escrito como afirmación.
+5. **Ordenanzas municipales:** SAIJ no las cubre. Buscarlas en el boletín/digesto/portal
+   del municipio (ver `jurisdicciones/`); si el texto oficial no se obtiene, marcarla 🔲
+   y pedirla como prueba/informe/documento — jamás fundamentar sobre un texto no leído.
 
 ## Paso 3 · Esqueleto argumental
 

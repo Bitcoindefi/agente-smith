@@ -51,6 +51,12 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
   ni citas. Lo no verificado en fuente primaria va marcado `🔲 verificación pendiente`.
 - **Fuente primaria primero:** consultá la norma o el fallo en **SAIJ** (MCP `saij`)
   antes de afirmar su contenido. Guardá los fallos usados en `<caso>/jurisprudencia/`.
+- **Fuentes locales y ordenanzas municipales:** SAIJ no cubre ordenanzas municipales ni
+  la totalidad de los boletines provinciales. Buscá el texto oficial en el boletín,
+  digesto o portal del municipio/provincia (ver `jurisdicciones/`). Si el texto oficial
+  **no se puede obtener**, no lo des por establecido: marcá la ordenanza
+  `🔲 verificación pendiente` y pedila como **prueba/informe/documento** (pedido de
+  informe al municipio, copia del texto o constancia del acta). Nunca inventes su texto.
 - **Alerta normativa:** si una norma está en zona volátil (reformas recientes), marcá
   `⚠️ Alerta normativa` con la fecha de corte de tu conocimiento.
 - **Enfoque de vulnerabilidad:** contemplá gratuidad, beneficio de litigar sin gastos,
@@ -61,7 +67,8 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
 
 - **MCP `saij`** — `saij_buscar_jurisprudencia`, `saij_buscar_legislacion`,
   `saij_buscar_doctrina`, `saij_documento(uuid)`. Cubre Nacional/Federal y legislación
-  Local de Jujuy y Salta.
+  Local de Jujuy y Salta. **No** cubre ordenanzas municipales ni todos los boletines
+  provinciales: para esas fuentes usá las fichas de `jurisdicciones/`.
 - **Skills** — `abogacia-argentina` (router y ejes normativos por área),
   `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`.
 
