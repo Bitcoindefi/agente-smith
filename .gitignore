@@ -23,6 +23,8 @@
 !/componentes/
 !/skills/
 !/casos/
+!/.github/
+!/test/
 
 # 3) Dentro de casos/: ignorar cada subcarpeta de caso (privado),
 #    permitir únicamente el README explicativo.
