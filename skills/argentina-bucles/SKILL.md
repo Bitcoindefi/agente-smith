@@ -81,6 +81,17 @@ Correr `argentina-diagnostico` sobre el resultado (auditoría de las 9 secciones
 entregar: escrito + tabla de fuentes + reporte de auditoría de citas + lista de 
 decisiones estratégicas que quedan en cabeza del abogado firmante.
 
+Cuando el escrito deba entregarse en Word o PDF, usar el conversor estándar en lugar
+de crear un script ad hoc:
+
+```bash
+python -m pip install -r componentes/requirements-documentos.txt
+python componentes/md-a-documento.py casos/<caso>/escrito.md
+```
+
+El archivo Markdown sigue siendo la fuente; revisar visualmente los `.docx` y `.pdf`
+generados antes de presentarlos.
+
 ## Reglas duras
 
 - Jamás inventar jurisprudencia, carátulas o números: si no está verificado, no se cita.
