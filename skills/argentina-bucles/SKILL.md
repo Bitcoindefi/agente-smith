@@ -75,6 +75,14 @@ Repetir el bucle hasta que una pasada no produzca cambios sustanciales (máx. 3)
    - Tabla de fuentes (jurisprudencia/fuentes-*.md).
    - Reporte de auditoría (generado por argentina-auditoria-citas).
 
+### Verificación aritmética obligatoria
+
+Antes del cierre, localizar toda afirmación derivada de fechas o plazos. Rehacer cada
+cálculo con `argentina-plazos` y dejar visible en el escrito de trabajo la fecha
+inicial, la fecha final, la regla aplicada y el intervalo contado. No incorporar al
+escrito una conclusión como "vigente", "vencido" o "transcurrieron X meses/años" si
+solo se verificó el resultado mentalmente.
+
 ## Paso 7 · Cierre
 
 Correr `argentina-diagnostico` sobre el resultado (auditoría de las 9 secciones) y
