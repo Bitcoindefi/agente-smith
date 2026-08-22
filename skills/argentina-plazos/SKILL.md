@@ -32,6 +32,10 @@ afirmar el resultado.**
    de afirmar cantidad de días o carácter del plazo. Citar artículo y texto.
 5. **Computar con calendario real**: feriados nacionales + feriados/asuetos locales de
    la jurisdicción (verificar — los provinciales NO son los nacionales).
+   Antes de afirmar una duración o un vencimiento, mostrar el cálculo que conduce al
+   resultado: fecha inicial, regla de inclusión/exclusión, unidades contadas y fecha
+   final. Para meses o años, descomponer el intervalo (por ejemplo, `2 años y 3
+   meses`) en vez de estimarlo por cantidad de días.
 6. **Aplicar ferias y suspensiones** que correspondan:
    - Ferias judiciales (en el orden nacional, enero y feria de invierno según acordadas
      de la CSJN; cada provincia fija las suyas por acordada de su superior tribunal —
@@ -43,7 +47,8 @@ afirmar el resultado.**
    propias reglas (algunas dan más horas, otras difieren) — **verificar el código
    procesal local antes de contar con la gracia**.
 8. **Salida.** Entregar tabla: acto · tipo de plazo · norma fuente (verificada, con
-   uuid SAIJ) · inicio · vencimiento · gracia aplicable · riesgo.
+   uuid SAIJ) · inicio · cálculo explícito · vencimiento · gracia aplicable ·
+   riesgo. El resultado nunca debe aparecer sin el cálculo que lo respalda.
 
 ## Reglas duras
 
@@ -59,3 +64,6 @@ afirmar el resultado.**
   pendiente y decir qué falta confirmar (norma, feriado local, acordada de feria).
 - Si dos cómputos son defendibles (p. ej. discusión sobre validez de la notificación),
   informar ambos escenarios: el propio y el peor escenario.
+- No inferir la fecha base de un mensaje de sistema ni confundir una fecha de
+  vencimiento con una fecha de visualización. Transcribir cada fecha junto con su
+  fuente y verificar primero el orden cronológico.
