@@ -77,6 +77,9 @@ Repetir el bucle hasta que una pasada no produzca cambios sustanciales (máx. 3)
 
 ## Paso 7 · Cierre
 
+Para la entrega en Word/PDF usar el conversor estándar `componentes/md-a-documento.py`
+(verifica automáticamente que todo el contenido del .md esté en el documento).
+
 Correr `argentina-diagnostico` sobre el resultado (auditoría de las 9 secciones) y
 entregar: escrito + tabla de fuentes + reporte de auditoría de citas + lista de 
 decisiones estratégicas que quedan en cabeza del abogado firmante.
