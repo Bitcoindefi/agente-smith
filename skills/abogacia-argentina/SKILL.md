@@ -30,6 +30,21 @@ reemplaza el juicio ni la firma del abogado** y no constituye asesoramiento lega
    presentación y el órgano destinatario, y usar el molde de la skill
    `argentina-formatos` — un descargo de faltas NO es una demanda con petitorio.
    Si el tipo de pieza no surge del pedido, preguntar antes de redactar.
+8. **Autoridades vigentes: regla de doble verificación (issue #17).** Los nombres de
+   personas en cargos (decanos, jefes, secretarios, jueces, funcionarios) rotan con
+   frecuencia impredecible: una búsqueda web puede devolver al titular anterior con
+   aparente confianza. Antes de dirigirse a o nombrar a una persona en un escrito:
+   - Verificar el cargo en **dos fuentes independientes y recientes** (sitio oficial
+     de la institución + una segunda fuente fechada en el año en curso), no en un
+     solo resultado de búsqueda.
+   - Preferir fuentes que muestren fecha de asunción o vigencia del cargo.
+   - Si no hay doble confirmación reciente, marcar 🔲 verificación pendiente y
+     redactar evitando el nombre propio ("al Sr./Sra. [cargo]" o "a quien ejerza
+     la [cargo]"), dejando el nombre como dato a confirmar antes de presentar.
+   - Cuidado extra con reintentos de búsqueda: pueden traer un homónimo de otra
+     unidad u organización con cargo similar — validar institución Y unidad.
+   Un nombre equivocado le resta seriedad al reclamo completo; el costo de verificar
+   es minutos, el costo del error es todo el escrito.
 
 ## Ruteo por área — ejes normativos de partida
 
