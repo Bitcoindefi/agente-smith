@@ -70,7 +70,21 @@ Repetir el bucle hasta que una pasada no produzca cambios sustanciales (máx. 3)
    - Opción B: eliminar la cita y reformular el párrafo sin ella.
    - Opción C: marcar deliberadamente con 🔲 si es genérica (decisión del abogado).
 4. Confirmar TODO lo que sea 🔲 (pendiente): es decisión irreversible que va en el cierre.
-5. Entregar:
+5. **Verificación aritmética de fechas (regla dura, issue #15):** todo cómputo
+   derivado de fechas — sumas, restas de meses/años, "cuánto tiempo pasó desde X
+   hasta Y", "el plazo vence el…" — debe mostrarse como **cálculo explícito**
+   antes de afirmarse como conclusión. Formato mínimo:
+   `de [fecha A] a [fecha B] hay N años y M meses (verificado: [resta paso a paso])`.
+   Obligatorio especialmente antes de:
+   - afirmar que un plazo está "vencido" o "vigente";
+   - atribuir un mensaje de un sistema/plataforma a una fecha base específica
+     (rehacer la resta explícitamente, nunca heredarla del mensaje);
+   - establecer el orden cronológico entre dos eventos que no están en la misma
+     fuente.
+   Un error aritmético le da a la contraparte la posibilidad de desacreditar el
+   escrito entero con una sola resta: el resultado sin el cálculo visible no
+   entra al escrito.
+6. Entregar:
    - Escrito final (100% citas verificadas ✅ o deliberadamente 🔲).
    - Tabla de fuentes (jurisprudencia/fuentes-*.md).
    - Reporte de auditoría (generado por argentina-auditoria-citas).
