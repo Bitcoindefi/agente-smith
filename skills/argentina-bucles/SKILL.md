@@ -81,6 +81,28 @@ Correr `argentina-diagnostico` sobre el resultado (auditoría de las 9 secciones
 entregar: escrito + tabla de fuentes + reporte de auditoría de citas + lista de 
 decisiones estratégicas que quedan en cabeza del abogado firmante.
 
+## Expedientes de varias rondas · Registro vivo de objeciones anticipadas
+
+**Cuándo:** el caso ya lleva más de una ronda de correspondencia con la contraparte
+(o se ve que la va a llevar). Es una práctica distinta del Paso 5: no es autocrítica
+de un documento aislado, es el mantenimiento de un **mapa vivo de los argumentos
+probables de la contraparte** a lo largo de todo el expediente. Sugerirlo de entrada,
+sin esperar a que el usuario lo invente ad hoc.
+
+1. **Archivo por caso** `objeciones-anticipadas.md` en el workspace del caso, con una
+   entrada por argumento probable, actualizada en cuanto se lo identifica:
+   - el argumento, tal como la contraparte lo plantearía;
+   - por qué no cierra (dónde se rompe);
+   - la respuesta lista: in extenso y en versión corta para uso oral;
+   - la fuente que la respalda (verificada como en el Paso 2).
+2. **Criterio ahora-vs-reserva:** entra YA al escrito en curso sólo lo que refuerza
+   la línea argumental principal; queda en reserva todo contraargumento que sólo
+   tiene sentido si la contraparte lo plantea primero — no adelantar munición que
+   resta fuerza a la mejor línea actual.
+3. **Antes de cada nueva ronda**, releer el registro completo contra la respuesta
+   que se está por dar: si algo ya preparado aplica, sale del archivo y entra al
+   escrito con su fuente ya verificada.
+
 ## Reglas duras
 
 - Jamás inventar jurisprudencia, carátulas o números: si no está verificado, no se cita.
