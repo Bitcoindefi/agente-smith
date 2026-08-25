@@ -45,6 +45,16 @@ afirmar el resultado.**
 8. **Salida.** Entregar tabla: acto · tipo de plazo · norma fuente (verificada, con
    uuid SAIJ) · inicio · vencimiento · gracia aplicable · riesgo.
 
+## Verificación aritmética obligatoria (issue #15)
+
+Todo cómputo derivado de fechas se entrega como **cálculo explícito**, no solo el
+resultado: `de [fecha A] a [fecha B] hay N años y M meses (verificado: [resta paso
+a paso])`. Antes de afirmar que un plazo está "vencido" o "vigente", rehacer la
+resta desde las fechas base; antes de atribuir un mensaje de sistema/plataforma a
+una fecha base, verificar el orden cronológico exacto entre ambos hechos. Quien
+detectó los errores históricos fue el usuario, no el agente — mostrar el cálculo
+permite controlar cualquier resta a simple vista antes de que salga.
+
 ## Reglas duras
 
 - 🔴 **Plazo fatal**: marcarlo siempre y recomendar margen de seguridad (no presentar
