@@ -68,6 +68,30 @@ condena en costas, sanciones por temeridad, preclusión de planteos no introduci
 ahora, y todo efecto irreversible de presentar (p. ej. pérdida de beneficios de pago
 voluntario, consentimiento de actos que se querían impugnar).
 
+## Correspondencia previa · Control de coherencia retrospectiva
+
+**Cuándo:** cualquier escrito o mail NUEVO dentro de un expediente que ya tiene
+correspondencia enviada a la misma contraparte. El riesgo específico: contradecirse
+frente a quien puede citar textualmente — *"usted mismo dijo antes que..."* es munición
+gratuita.
+
+**Paso cero — registro de enviados.** El caso mantiene, como estándar del workspace,
+un registro claro de qué se envió y cuándo (fecha → destinatario → pieza). Sin ese
+registro no hay control posible: si falta, crearlo antes de seguir.
+
+**El chequeo:** antes de dar por cerrado el borrador, releerlo contra TODO lo ya
+enviado en ese expediente — no contra el borrador en aislado — buscando tres defectos:
+
+1. **Contradicciones fácticas:** afirmaciones que contradigan lo ya dicho a la
+   contraparte.
+2. **Teorías zombis:** fechas, cómputos o teorías ya corregidas o descartadas en
+   rondas anteriores que reaparecen sin la corrección incorporada.
+3. **Autoconcesiones:** lógicas que, seguidas hasta el final, terminan admitiendo lo
+   contrario de lo que el escrito sostiene.
+
+Cada hallazgo entra a la tabla semáforo como 🔴 (munición para la contraparte), con
+cita de la pieza y fecha donde está la versión anterior.
+
 ## Salida
 
 1. **Tabla semáforo** de las 9 secciones con observación puntual por sección.
