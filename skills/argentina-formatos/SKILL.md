@@ -138,6 +138,50 @@ asistido. Si el tipo de pieza no surge del pedido, **preguntar antes de redactar
   y lo pedido. Sin hechos, sin derecho, sin petitorio. ("Otrosí digo" para
   pedidos accesorios dentro de otra pieza.)
 
+### §13 · Correo electrónico a contraparte institucional (reclamo activo) — issue #19
+
+El mail contra una institución (obra social, universidad, empresa de servicios,
+aseguradora) no es una carta documento: es un canal de reclamo **prolongado** donde
+cada decisión de forma documenta conducta. Criterios por decisión:
+
+**1. ¿Mismo hilo o hilo nuevo?**
+- Mismo hilo mientras el reclamo sea el mismo tema: la contraparte (y cualquier
+  autoridad agregada después) ve automáticamente todo lo actuado.
+- Hilo nuevo cuando: cambia el tema sustancial, pasó tanto tiempo que el hilo es
+  ilegible, o se abre instancia formal (ahí el hilo viejo se adjunta como antecedente).
+
+**2. Escalada progresiva de destinatarios (dentro del mismo hilo).**
+- Agregar autoridades superiores en Para/CC **sin sacar a nadie**: la falta de
+  respuesta de los primeros queda documentada ante los nuevos sin necesidad de
+  decirlo explícitamente.
+- Escalado típico: atención/soporte → jefatura del área → dirección/general →
+  órgano de control (defensoría del consumidor, organismo regulatorio) → vía formal.
+- Nunca acusar explícitamente el silencio ajeno en el cuerpo: que lo vean ellos.
+
+**3. Registro conciliador vs escalada formal.**
+- Mail conciliador: tono llano, sin citas legales, hecho + lo que se pide + plazo
+  razonable ("si en 10 días hábiles no recibo respuesta..."). Busca resolver rápido
+  y de buena fe; deja constancia de buena disposición propia.
+- Escalada formal: fundamentación completa (norma, hechos, daño), ya con lenguaje
+  de reclamo. Momento de pasar de uno a otro: agotado el plazo dado en el mail
+  conciliador sin respuesta satisfactoria, o respuesta evasiva/negativa.
+
+**4. Recordatorio por falta de respuesta.**
+- Breve y neutral: reenvío de contexto + fecha del mail anterior + "agradezco
+  respuesta a la brevedad". Sin ironía ni urgencia teatral.
+- El solo hecho de reenviar en el mismo hilo ya refuerza el reclamo: muestra cuánto
+  tiempo pasó ante testigos crecientes.
+
+**5. Verificación de destinatarios.**
+- Preferir casillas ya confirmadas como funcionales (respondieron alguna vez).
+- Direcciones nuevas/no verificadas: agregarlas como refuerzo de bajo costo; si
+  rebotan, anotarlo (el rebote documentado también suma al expediente informal).
+- Nunca depender de un único destinatario para un reclamo importante.
+
+**6. Estructura mínima de cada mail.**
+Asunto estable con identificador (`[Reclamo] servicio X – cliente N° …`) · hecho en
+dos líneas · lo que se pide · plazo · despedida corta. Un mail = un tema.
+
 ## Reglas transversales
 
 - **La solemnidad escala con el órgano**, no con las ganas: juzgado de faltas y
