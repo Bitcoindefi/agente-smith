@@ -1,0 +1,28 @@
+# Tests del manejo de expedientes
+# -----------------------------------------
+# Comprueban sobre todo lo que el script tiene que IMPEDIR: abrir un caso sin
+# jurisdiccion, usar una jurisdiccion que no tiene ficha, y archivar un caso
+# con plazos todavia pendientes.
+#
+# No tocan ninguna API y arman todo en /tmp, asi que no hay motivo para que
+# sean tolerantes a fallos.
+
+name: Expedientes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Tests de expedientes
+        run: node test/casos-test.mjs

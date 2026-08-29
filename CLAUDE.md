@@ -63,7 +63,8 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
   `saij_buscar_doctrina`, `saij_documento(uuid)`. Cubre Nacional/Federal y legislación
   Local de Jujuy y Salta.
 - **Skills** — `abogacia-argentina` (router y ejes normativos por área),
-  `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`.
+  `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`,
+  `argentina-expedientes`.
 
 ## Privacidad
 
