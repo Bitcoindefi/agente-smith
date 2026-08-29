@@ -29,11 +29,31 @@ fi
 ok "Repo Agente Smith: $REPO"
 
 # 1) Skills (todas propias, desde el repo)
-for s in abogacia-argentina argentina-formatos argentina-plazos argentina-diagnostico argentina-bucles saij-argentina; do
+#    Se descubren solas. La lista fija anterior tenia seis nombres y en skills/
+#    ya habia siete: argentina-auditoria-citas existia y no se instalaba, asi
+#    que quien usaba el oneliner no la tenia y no habia forma de notarlo.
+CUENTA=0
+for d in "$REPO"/skills/*/; do
+  [ -f "$d/SKILL.md" ] || continue
+  s="$(basename "$d")"
   mkdir -p "$SKILLS/$s"
-  cp -r "$REPO/skills/$s/." "$SKILLS/$s/"
+  cp -r "$d." "$SKILLS/$s/"
+  CUENTA=$((CUENTA+1))
 done
-ok "6 skills instaladas en $SKILLS"
+ok "$CUENTA skills instaladas en $SKILLS"
+
+# 1b) Agentes (corren solos; el de alerta normativa necesita el MCP de SAIJ)
+if [ -d "$REPO/agentes" ]; then
+  AGENTES="$HOME/.claude/agents"
+  mkdir -p "$AGENTES"
+  CUENTA_A=0
+  for f in "$REPO"/agentes/*.md; do
+    [ -f "$f" ] || continue
+    cp "$f" "$AGENTES/"
+    CUENTA_A=$((CUENTA_A+1))
+  done
+  ok "$CUENTA_A agentes instalados en $AGENTES"
+fi
 
 # 2) MCP de SAIJ
 cp "$REPO/componentes/mcp-saij/server.mjs" "$MCPDIR/server.mjs"
