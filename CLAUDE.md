@@ -41,6 +41,15 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
    área en SAIJ (fuente primaria, en vivo).
 4. Confirmá jurisdicción/fuero antes de cualquier cómputo de plazos.
 
+## La primera vez
+
+Corré **`argentina-configuracion`**. El agente sabe derecho argentino y tres
+jurisdicciones; lo que no sabe es cómo trabaja esta oficina: en qué juzgados
+tramita, cómo se notifica ahí, qué feria aplica y quién firma. Hoy eso lo deduce
+de cada conversación, mal y de nuevo cada vez.
+
+Queda en `configuracion.local.md`, que el `.gitignore` deja fuera del repositorio.
+
 ## Reglas de operación (no negociables)
 
 - **Plazos por jurisdicción:** días hábiles judiciales ≠ hábiles administrativos ≠
@@ -63,7 +72,8 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
   `saij_buscar_doctrina`, `saij_documento(uuid)`. Cubre Nacional/Federal y legislación
   Local de Jujuy y Salta.
 - **Skills** — `abogacia-argentina` (router y ejes normativos por área),
-  `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`.
+  `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`,
+  `argentina-configuracion`, `argentina-desvios`.
 
 ## Privacidad
 
