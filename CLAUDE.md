@@ -41,6 +41,23 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
    área en SAIJ (fuente primaria, en vivo).
 4. Confirmá jurisdicción/fuero antes de cualquier cómputo de plazos.
 
+## Agentes que corren solos
+
+Dos, en `agentes/`. Se instalan en `~/.claude/agents/`.
+
+| Agente | Cada cuánto | Necesita MCP |
+|--------|-------------|--------------|
+| `vigia-plazos` | semanal | no |
+| `alerta-normativa` | quincenal | **sí**, el de SAIJ |
+
+La diferencia con las skills es quién se acuerda: una skill hay que invocarla, y
+falla justo la semana en que estás corriendo, que es la semana en que se pierde
+un plazo.
+
+`alerta-normativa` responde una pregunta que sólo sabe la base: si se movió una
+norma citada en un escrito ya presentado de un caso que sigue abierto. Sin el
+MCP no infiere: dice que no pudo verificar.
+
 ## Reglas de operación (no negociables)
 
 - **Plazos por jurisdicción:** días hábiles judiciales ≠ hábiles administrativos ≠
