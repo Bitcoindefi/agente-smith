@@ -1,0 +1,29 @@
+# Tests del vigia de vencimientos
+# -----------------------------------------
+# A diferencia de los smoke tests de SAIJ, estos no dependen de ninguna API
+# externa: arman expedientes sinteticos en una carpeta temporal y comprueban
+# que el escaneo separe bien lo que vence, lo que nadie computo y lo que no se
+# puede computar por falta de jurisdiccion.
+#
+# Sin red y sin datos reales, asi que no hay motivo para que sean tolerantes a
+# fallos: si fallan, fallan.
+
+name: Vigia de vencimientos
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Tests del vigia
+        run: node test/vigia-test.mjs

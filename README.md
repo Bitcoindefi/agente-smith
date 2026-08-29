@@ -68,7 +68,7 @@ y se computa el plazo aplicable.
 
 | Capa | Qué hace |
 |------|----------|
-| **Skills** | `abogacia-argentina` (router generalista por área: laboral, civil, penal, familia, consumidor, societario, administrativo, previsional, tributario, tránsito, protección de datos), `argentina-formatos` (anatomía de cada tipo de escrito: demanda ≠ descargo ≠ recurso ≠ nota), `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`. Todas propias, MIT. |
+| **Skills** | `abogacia-argentina` (router generalista por área: laboral, civil, penal, familia, consumidor, societario, administrativo, previsional, tributario, tránsito, protección de datos), `argentina-formatos` (anatomía de cada tipo de escrito: demanda ≠ descargo ≠ recurso ≠ nota), `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`. Todas propias, MIT., `argentina-vigia` (repaso de vencimientos de todos los expedientes) |
 | **MCP SAIJ** | Búsqueda en vivo de jurisprudencia, legislación y doctrina + texto completo por uuid. Código propio, cero dependencias. |
 | **Multi-jurisdicción** | CABA/Nacional (CPCCN, CPPF), Jujuy y Salta — extensible con una ficha por provincia. Pregunta el fuero al abrir cada caso. |
 | **Workspace de casos** | Cada caso es una subcarpeta en `casos/` con ficha, escritos, documentación, jurisprudencia y plazos. |

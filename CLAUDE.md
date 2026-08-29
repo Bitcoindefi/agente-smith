@@ -41,6 +41,15 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
    área en SAIJ (fuente primaria, en vivo).
 4. Confirmá jurisdicción/fuero antes de cualquier cómputo de plazos.
 
+## Al empezar la semana
+
+Corré la skill **`argentina-vigia`**: revisa todos los expedientes de una pasada
+y separa lo que vence pronto, lo que nadie computó todavía, y lo que no se puede
+computar porque a la ficha le falta la jurisdicción.
+
+El plazo que se pierde casi nunca es el que estabas mirando. Es la fila que
+quedó en `🔲 a computar` en uno de los otros casos.
+
 ## Reglas de operación (no negociables)
 
 - **Plazos por jurisdicción:** días hábiles judiciales ≠ hábiles administrativos ≠
@@ -63,7 +72,8 @@ computar plazos o citar procedimiento. Leé la ficha de jurisdicción correspond
   `saij_buscar_doctrina`, `saij_documento(uuid)`. Cubre Nacional/Federal y legislación
   Local de Jujuy y Salta.
 - **Skills** — `abogacia-argentina` (router y ejes normativos por área),
-  `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`.
+  `argentina-plazos`, `argentina-diagnostico`, `argentina-bucles`, `saij-argentina`,
+  `argentina-vigia`.
 
 ## Privacidad
 
