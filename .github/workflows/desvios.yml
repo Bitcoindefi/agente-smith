@@ -1,0 +1,27 @@
+# Tests del registro de desvios
+# -----------------------------------------
+# Lo que comprueban es sobre todo lo que el script NO tiene que hacer: proponer
+# cambiar una ficha antes del umbral, sumar temas o jurisdicciones distintas
+# para llegar a el, o contar desvios de hace dos anos como si fueran de hoy.
+#
+# Sin red y sin datos reales: si fallan, fallan.
+
+name: Desvios
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Tests del registro de desvios
+        run: node test/desvios-test.mjs
