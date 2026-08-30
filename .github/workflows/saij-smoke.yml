@@ -39,7 +39,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
+          # Sin `cache: "npm"`: este repo no tiene lockfile y setup-node aborta
+          # el job entero al no encontrarlo. El paso de tests quedaba `skipped`
+          # y el log decia "Smoke tests failed" sin que corriera un solo test.
+          # No hay nada que cachear: el smoke usa fetch, sin dependencias.
 
       - name: Run SAIJ smoke tests
         id: smoke
