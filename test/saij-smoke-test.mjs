@@ -89,6 +89,32 @@ async function httpGetJson(url) {
 
 // ---------- Contrato de salida esperado ----------
 
+/**
+ * El contenido de un resultado, sea cual sea la forma que devuelva SAIJ.
+ *
+ * Hasta agosto de 2026 venia como { content: {...} }. Ahora viene envuelto en
+ * { document: { metadata, content } }. Se aceptan las dos: asi el test no se
+ * rompe el dia que SAIJ vuelva atras.
+ */
+function contenidoDe(abs) {
+  return abs?.document?.content ?? abs?.content ?? {};
+}
+
+/**
+ * El titulo se llama distinto en cada tipo de documento y ninguno coincide.
+ * Antes no se notaba porque el fallback terminaba en abs.document, que era un
+ * string; ahora abs.document es un objeto, asi que caer al fallback devolvia
+ * un objeto y el test fallaba con "'titulo' no es string".
+ */
+function tituloDe(c) {
+  return c["titulo"] || c["titulo-doctrina"] || c["titulo-norma"] ||
+         c["caratula"] || c["standard-name"] || "";
+}
+
+function textoDe(c) {
+  return c["texto"] || c["sumario"] || c["sintesis"] || c["texto-completo"] || "";
+}
+
 function validarResultado(r, index) {
   const errores = [];
 
@@ -131,7 +157,7 @@ function validarResultado(r, index) {
 async function probarBusqueda(tipo, consulta, label) {
   const facetMap = {
     jurisprudencia: "Total|Tipo de Documento/Jurisprudencia",
-    legislacion: "Total|Tipo de Documento/Legislacion",
+    legislacion: "Total|Tipo de Documento/Legislación",
     doctrina: "Total|Tipo de Documento/Doctrina",
   };
   const facet = facetMap[tipo];
@@ -190,11 +216,12 @@ async function probarBusqueda(tipo, consulta, label) {
       continue;
     }
 
+    const c = contenidoDe(abs);
     const resultado = {
       uuid: it.uuid,
       url: BASE + "/" + it.uuid,
-      titulo: abs?.content?.titulo || abs?.content?.caratula || abs?.document || "(sin titulo)",
-      texto: abs?.content?.texto || abs?.content?.sintesis || abs?.content?.sumario || "",
+      titulo: tituloDe(c) || "(sin titulo)",
+      texto: textoDe(c),
     };
 
     const v = validarResultado(resultado, i);
@@ -254,19 +281,19 @@ async function probarDocumento() {
     return;
   }
 
-  const metadata = doc.metadata || {};
-  const content = doc.content || {};
+  const metadata = doc?.document?.metadata ?? doc.metadata ?? {};
+  const content = contenidoDe(doc);
 
-  if (!metadata["document-content-type"] && !content.titulo) {
+  if (!metadata["document-content-type"] && !tituloDe(content)) {
     skip("saij_documento", "documento devuelto sin metadatos reconocibles");
     return;
   }
 
   const errores = [];
-  if (!content.titulo && !content.caratula && !content["titulo-norma"]) {
+  if (!tituloDe(content)) {
     errores.push("sin titulo reconocible en el documento");
   }
-  if (!content.texto && !content["texto-completo"] && !content.sintesis) {
+  if (!textoDe(content)) {
     errores.push("sin texto en el documento");
   }
 
