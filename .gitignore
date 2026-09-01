@@ -37,3 +37,5 @@ Thumbs.db
 *.tmp
 *~
 .vscode/
+__pycache__/
+*.py[cod]
