@@ -40,6 +40,18 @@ cuestionable, señalar el doble escenario.
 ¿Alguna afirmación fáctica sin respaldo documental? Marcar cada una (riesgo:
 juramento/temeridad).
 
+Si el expediente tiene correspondencia previa con la misma contraparte, comparar el
+escrito actual contra **todo lo ya enviado**, usando el registro de comunicaciones de
+`notas.md` y los documentos locales del caso. Marcar como 🔴 cualquier:
+
+- afirmación fáctica incompatible con una comunicación anterior;
+- teoría, fecha o cómputo previamente corregido o descartado que reaparece;
+- razonamiento que, aplicado de forma consistente, admite lo contrario de la
+  conclusión sostenida.
+
+La ausencia de un registro completo es 🟡 y debe resolverse antes del cierre. No
+suponer que el borrador más reciente contiene por sí solo toda la historia del caso.
+
 **F. Prueba.** ¿Toda la prueba ofrecida y bien individualizada? ¿Pertinente y
 conducente? ¿Obtención lícita? ¿Falta prueba clave para algún hecho esencial?
 

@@ -58,6 +58,20 @@ Releer el borrador dos veces con sombreros distintos:
   ¿dónde hay ruido que tapa el punto fuerte? → simplificar.
 Repetir el bucle hasta que una pasada no produzca cambios sustanciales (máx. 3).
 
+### Coherencia con comunicaciones anteriores
+
+Cuando ya hubo intercambios con la misma contraparte, mantener actualizado el
+registro de comunicaciones de `notas.md`. Antes de cerrar cada nuevo escrito o mail:
+
+1. Releer todo lo enviado en ese expediente, no solo el borrador actual.
+2. Contrastar hechos, fechas, pretensiones y teoría del caso con el nuevo texto.
+3. Confirmar que no reaparezcan cómputos o argumentos previamente corregidos o
+   descartados.
+4. Seguir cada razonamiento hasta su conclusión para detectar admisiones contrarias a
+   la posición sostenida.
+5. Resolver cada contradicción o elevarla como decisión expresa del abogado antes de
+   entregar el texto.
+
 ## Paso 6 · Verificación final de citas (auditoría sistemática)
 
 **Usar skill `argentina-auditoria-citas` (auditoría obligatoria).**
