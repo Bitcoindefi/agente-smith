@@ -30,6 +30,12 @@ reemplaza el juicio ni la firma del abogado** y no constituye asesoramiento lega
    presentación y el órgano destinatario, y usar el molde de la skill
    `argentina-formatos` — un descargo de faltas NO es una demanda con petitorio.
    Si el tipo de pieza no surge del pedido, preguntar antes de redactar.
+8. **Ordenanzas municipales y fuentes locales.** SAIJ no cubre ordenanzas
+   municipales ni la totalidad de los boletines provinciales: la norma decisiva
+   puede estar solo en el portal oficial del municipio (ver `jurisdicciones/`).
+   Buscá el texto en fuente oficial; si no se puede obtener, marcá la ordenanza
+   `🔲` y pedila como prueba/informe/documento — nunca des por vigente un texto
+   que no leíste en fuente oficial.
 
 ## Ruteo por área — ejes normativos de partida
 
@@ -56,7 +62,9 @@ son citas listas para usar):
 La mecánica de faltas municipales (ej. multas de estacionamiento o tránsito local) difiere del área "tránsito" nacional. Las ordenanzas locales **casi nunca están en SAIJ**, por lo que deben verificarse en fuentes oficiales del municipio.
 
 - **Procedimiento típico**: Acta → Notificación → Pago voluntario reducido → Juzgamiento (Descargo).
-- **Advertencia normativa ⚠️**: Verificar siempre el Código de Faltas y las ordenanzas locales aplicables en portales municipales.
+- **Advertencia normativa ⚠️**: Verificar siempre el Código de Faltas y las ordenanzas locales aplicables en portales municipales (ver la sección
+  "Fuentes locales" más abajo). Si el texto oficial de la ordenanza no se puede
+  obtener, marcarla `🔲` y pedirla como prueba/informe/documento — no darla por vigente.
 - **Prescripción**: Cotejar el plazo local de prescripción vs. el art. 89 de la Ley Nacional de Tránsito 24.449 (evaluando el texto original vs. la reforma de la Ley 26.363 y el grado de adhesión local).
 - **Pago voluntario**: Evaluar conveniencia y procedencia.
 
@@ -66,6 +74,50 @@ La mecánica de faltas municipales (ej. multas de estacionamiento o tránsito lo
 - [ ] **Nulidad del acta** (art. 70 LNT o incumplimiento de requisitos formales del código local).
 - [ ] **Prescripción** (tiempo transcurrido desde la infracción o última actuación).
 - [ ] **Procedencia de pago voluntario**.
+
+## Fuentes locales (más allá de SAIJ)
+
+SAIJ cubre legislación y jurisprudencia nacional/federal y Local de Jujuy y Salta,
+pero **no** cubre ordenanzas municipales ni la totalidad de los boletines oficiales
+provinciales. En causas de faltas municipales la norma decisiva puede existir solo en
+el portal oficial del municipio. Las fichas de `jurisdicciones/` traen, por
+jurisdicción, la tabla de boletines oficiales, digestos y portales de ordenanzas.
+
+### Clasificación de fuentes
+
+- **Autoritativa / primaria:** el boletín oficial del órgano (publicación oficial que
+  fija la entrada en vigencia) y el texto publicado por el órgano que dicta la norma
+  (concejo deliberante, legislatura, poder ejecutivo). Es lo único que se cita como
+  texto vigente.
+- **De referencia / secundaria:** SAIJ, InfoLEG y los digestos consolidados (provinciales
+  o municipales). Sirven para ubicar la norma y leer su texto, pero la **vigencia** se
+  confirma contra el boletín oficial del órgano — los digestos no sustituyen la
+  publicación oficial.
+- **No disponible / no verificada:** lo que no se pudo consultar en fuente oficial. Se
+  marca `🔲 verificación pendiente` y **no** se afirma su contenido.
+
+### Recuperación responsable (no hay conectores para estos portales)
+
+Los portales municipales y provinciales son heterogéneos y cambian seguido; no exponen
+APIs públicas estables, por lo que **no** se construyen conectores ni se hace scraping
+agresivo. En su lugar:
+
+- Recuperá **el documento puntual** que el caso necesita (una ordenanza, un boletín),
+  contra el portal oficial `.gob.ar`, nunca un crawling masivo.
+- Respetá `robots.txt`, los términos de uso y los límites de cada portal. **No** eludas
+  CAPTCHAs, accesos, logins ni paywalls.
+- Si el portal bloquea el acceso automatizado o exige usuario, recuperá la norma
+  **manualmente** (el abogado) o pedila por **pedido de informe** al órgano — jamás
+  fuerces el acceso.
+- Registrá siempre la URL oficial + fecha de consulta (y uuid SAIJ cuando aplique).
+
+### Regla de cierre: ordenanza que no se puede obtener
+
+Cuando el caso **dependa** de una ordenanza municipal y su texto oficial no se pueda
+obtener, la ordenanza se marca `🔲 verificación pendiente` y se solicita como
+**prueba/informe/documento** (pedido de informe al municipio, copia del texto, o
+constancia del acta de infracción), en lugar de tratar el texto faltante como derecho
+establecido. Nunca se inventa el contenido de una ordenanza.
 
 ## Sub-skills
 
