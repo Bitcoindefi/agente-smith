@@ -58,6 +58,14 @@ Releer el borrador dos veces con sombreros distintos:
   ¿dónde hay ruido que tapa el punto fuerte? → simplificar.
 Repetir el bucle hasta que una pasada no produzca cambios sustanciales (máx. 3).
 
+### Registro Vivo de Objeciones Anticipadas (Disputas de Varios Rounds)
+En litigios o controversias administrativas que implican sucesivos traslados, réplicas o instancias recursivas (descargo inicial, réplica, apelación/recurso directo), documentar un registro acumulativo en  o en la sección de estrategia:
+- **Matriz de objeción y contrarréplica:**
+  | Round / Instancia | Objeción / Agravio Anticipado | Fundamento de la Contraparte | Estrategia de Neutralización | Fuente / Prueba de Respaldo |
+  |---|---|---|---|---|
+- **Trazabilidad entre rounds:** Vincular cada objeción formulada en la crítica adversarial con la respuesta prevista para el round posterior, evitando contradicciones argumentales futuras.
+- **Alertas de preclusión:** Identificar hechos y defensas que deben introducirse imperativamente en el primer round bajo pena de caducidad o preclusión procesal.
+
 ## Paso 6 · Verificación final de citas (auditoría sistemática)
 
 **Usar skill `argentina-auditoria-citas` (auditoría obligatoria).**
