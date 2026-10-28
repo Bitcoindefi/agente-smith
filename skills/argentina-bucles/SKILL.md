@@ -54,6 +54,13 @@ que no prueben nada; cada afirmación fáctica con su respaldo citado.
 Releer el borrador dos veces con sombreros distintos:
 - **Como contraparte:** ¿qué contestaría? ¿qué hecho negaría? ¿qué debilidad explota?
   → reforzar o podar.
+- **Como contraparte con historial (control de coherencia retrospectiva):** si el caso
+  tiene presentaciones, descargos o correos previos (ver tabla en `FICHA.md` y
+  archivos en `escritos/`), releer el borrador contra **todo lo ya enviado**:
+  * ¿Contradice afirmaciones fácticas o fechas ya sostenidas frente a la misma contraparte?
+  * ¿Reintroduce teorías del caso, cómputos o argumentos ya descartados o rectificados en rondas anteriores?
+  * ¿Presenta premisas o deducciones que, explotadas por la contraparte, terminen reconociendo su postura?
+  → suprimir contradicciones y armonizar con la línea histórica del expediente.
 - **Como juez/autoridad:** ¿qué falta probar? ¿qué pedido es incongruente o excesivo?
   ¿dónde hay ruido que tapa el punto fuerte? → simplificar.
 Repetir el bucle hasta que una pasada no produzca cambios sustanciales (máx. 3).
@@ -77,9 +84,10 @@ Repetir el bucle hasta que una pasada no produzca cambios sustanciales (máx. 3)
 
 ## Paso 7 · Cierre
 
-Correr `argentina-diagnostico` sobre el resultado (auditoría de las 9 secciones) y
-entregar: escrito + tabla de fuentes + reporte de auditoría de citas + lista de 
-decisiones estratégicas que quedan en cabeza del abogado firmante.
+Correr `argentina-diagnostico` sobre el resultado (auditoría de las 10 secciones,
+incluyendo control de coherencia retrospectiva) y entregar: escrito + tabla de
+fuentes + reporte de auditoría de citas + lista de decisiones estratégicas que
+quedan en cabeza del abogado firmante.
 
 ## Reglas duras
 

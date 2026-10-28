@@ -10,7 +10,7 @@ Skill original de Agente Smith (MIT). Opera sobre un escrito **ya redactado** qu
 abogado aporta. Objetivo: detectar defectos que causen rechazo, nulidad o riesgo,
 ANTES de presentar. No reescribe el escrito (eso es `argentina-bucles`); lo audita.
 
-## Método: auditoría en 9 secciones con semáforo
+## Método: auditoría en 10 secciones con semáforo
 
 Revisar el escrito completo y calificar cada sección 🟢 (firme) / 🟡 (mejorable) /
 🔴 (defecto que puede causar rechazo). Citar la parte exacta del escrito en cada
@@ -68,9 +68,29 @@ condena en costas, sanciones por temeridad, preclusión de planteos no introduci
 ahora, y todo efecto irreversible de presentar (p. ej. pérdida de beneficios de pago
 voluntario, consentimiento de actos que se querían impugnar).
 
+**J. Coherencia retrospectiva (expedientes con correspondencia o presentaciones previas).**
+En expedientes en curso con historial de correspondencia, notas, descargos o presentaciones
+anteriores frente a la misma contraparte o tribunal, auditar el nuevo borrador contra
+**todo lo ya enviado en ese mismo expediente** (no solo el borrador en aislado):
+1. *Contradicciones fácticas:* ¿Afirma algún hecho, fecha o circunstancia que contradiga
+   o desmienta lo manifestado en comunicaciones anteriores?
+2. *Regresión de teorías descartadas:* ¿Reaparece por descuido alguna teoría del caso,
+   cálculo o cómputo que en rondas previas se corrigió o descartó deliberadamente?
+3. *Efecto boomerang o admisión inversa:* ¿Alguna premisa o lógica argumental, seguida
+   hasta sus últimas consecuencias, termina admitiendo la postura contraria o dando
+   munición gratuita a la contraparte ("usted mismo dijo antes que...")?
+
+Calificación semáforo:
+- 🟢 (firme): Totalmente consistente con el historial del expediente; sin contradicciones
+  con envíos previos registrados en la ficha del caso.
+- 🟡 (mejorable): Cambio de matiz o enfoque respecto a piezas anteriores que conviene
+  justificar o armonizar expresamente.
+- 🔴 (defecto con riesgo grave): Contradicción flagrante con afirmaciones previas que
+  debilita irreparablemente la teoría del caso frente a la contraparte.
+
 ## Salida
 
-1. **Tabla semáforo** de las 9 secciones con observación puntual por sección.
+1. **Tabla semáforo** de las 10 secciones con observación puntual por sección.
 2. **Lista priorizada de correcciones**: primero lo que causa rechazo (🔴), después lo
    que debilita (🟡), después estilo.
 3. **Citas verificadas**: tabla norma/fallo → qué dice realmente → uuid SAIJ → veredicto
