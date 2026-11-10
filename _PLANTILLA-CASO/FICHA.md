@@ -31,5 +31,12 @@
 ## Riesgos y plazos críticos
 - Ver `plazos.md`. Plazos fatales pendientes: 🔲
 
+## Registro de presentaciones y correspondencia enviada
+> Registro cronológico de escritos, notas, cartas documento y correos ya enviados a la contraparte o presentados en el tribunal. Base documental obligatoria para el control de coherencia retrospectiva (`argentina-diagnostico` y `argentina-bucles`).
+
+| Fecha | Pieza / Medio | Destinatario / Organismo | Puntos clave afirmados y hechos fijados | Archivo en `/escritos/` |
+|-------|---------------|--------------------------|-----------------------------------------|-------------------------|
+| AAAA-MM-DD | (Demanda / Contestación / Mail / CD / Descargo) | (Contraparte / Juzgado) | (Síntesis de postura y hechos admitidos/negados) | `escritos/...` |
+
 ---
 _Recordatorio: no cites jurisprudencia ni normas sin verificar en SAIJ. Marcá lo pendiente con 🔲._

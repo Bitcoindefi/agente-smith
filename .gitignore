@@ -36,4 +36,5 @@
 Thumbs.db
 *.tmp
 *~
-.vscode/
+config.bat
+node_modules
